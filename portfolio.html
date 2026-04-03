@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Tanish Enterprises</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Tanish Enterprises<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <p class="hero-tag">Our Work</p>
+    <h1>Featured <span class="gold">Portfolio</span></h1>
+    <p>A curated selection of projects that showcase our craft, creativity, and commitment.</p>
+  </section>
+
+  <!-- FILTER -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterPortfolio('all', this)">All</button>
+        <button class="filter-btn" onclick="filterPortfolio('web', this)">Web Design</button>
+        <button class="filter-btn" onclick="filterPortfolio('brand', this)">Branding</button>
+        <button class="filter-btn" onclick="filterPortfolio('ecom', this)">E-Commerce</button>
+      </div>
+
+      <div class="portfolio-full-grid">
+        <div class="pf-card" data-cat="web">
+          <div class="pf-bg" style="background: linear-gradient(135deg, #c9a84c33, #7a5f1a44); border: 1px solid #c9a84c44;">
+            <div class="pf-mock">
+              <div class="mock-bar"></div>
+              <div class="mock-lines">
+                <span style="width:60%"></span><span style="width:80%"></span><span style="width:45%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>LuxeStay Hotels</h3>
+            <p>Hospitality Website · Web Design</p>
+          </div>
+        </div>
+
+        <div class="pf-card" data-cat="web">
+          <div class="pf-bg" style="background: linear-gradient(135deg, #8b5cf633, #4c1d9544); border: 1px solid #8b5cf644;">
+            <div class="pf-mock">
+              <div class="mock-bar" style="background:#8b5cf6"></div>
+              <div class="mock-lines">
+                <span style="width:75%"></span><span style="width:55%"></span><span style="width:90%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>NovaTech SaaS</h3>
+            <p>SaaS Platform · Web Design</p>
+          </div>
+        </div>
+
+        <div class="pf-card" data-cat="ecom">
+          <div class="pf-bg" style="background: linear-gradient(135deg, #e0525233, #7f1d1d44); border: 1px solid #e0525244;">
+            <div class="pf-mock">
+              <div class="mock-bar" style="background:#e05252"></div>
+              <div class="mock-lines">
+                <span style="width:50%"></span><span style="width:70%"></span><span style="width:40%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>Ember Eats</h3>
+            <p>Restaurant · E-Commerce</p>
+          </div>
+        </div>
+
+        <div class="pf-card" data-cat="brand">
+          <div class="pf-bg" style="background: linear-gradient(135deg, #10b98133, #06474444); border: 1px solid #10b98144;">
+            <div class="pf-mock">
+              <div class="mock-bar" style="background:#10b981"></div>
+              <div class="mock-lines">
+                <span style="width:65%"></span><span style="width:85%"></span><span style="width:55%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>Verdant Organics</h3>
+            <p>Health Brand · Branding</p>
+          </div>
+        </div>
+
+        <div class="pf-card" data-cat="ecom">
+          <div class="pf-bg" style="background: linear-gradient(135deg, #f59e0b33, #78350f44); border: 1px solid #f59e0b44;">
+            <div class="pf-mock">
+              <div class="mock-bar" style="background:#f59e0b"></div>
+              <div class="mock-lines">
+                <span style="width:80%"></span><span style="width:60%"></span><span style="width:70%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>GoldThread Jewels</h3>
+            <p>Luxury Jewellery · E-Commerce</p>
+          </div>
+        </div>
+
+        <div class="pf-card" data-cat="brand">
+          <div class="pf-bg" style="background: linear-gradient(135deg, #3b82f633, #1e3a8a44); border: 1px solid #3b82f644;">
+            <div class="pf-mock">
+              <div class="mock-bar" style="background:#3b82f6"></div>
+              <div class="mock-lines">
+                <span style="width:55%"></span><span style="width:75%"></span><span style="width:45%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="pf-info">
+            <h3>Apex Finance</h3>
+            <p>Finance Corp · Branding</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Want Your Project <span class="gold">Here?</span></h2>
+      <p>Let's collaborate and create something remarkable together.</p>
+      <a href="contact.html" class="btn-primary">Start Your Project</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">TE<span>.</span></span>
+        <p>Tanish Enterprises</p>
+        <small>Premium Web Design Agency, India</small>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Tanish Enterprises. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

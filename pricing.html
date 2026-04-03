@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing | Tanish Enterprises</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">TE<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <p class="hero-tag">Transparent Pricing</p>
+    <h1>Simple, <span class="gold">Honest Plans</span></h1>
+    <p>Choose the plan that fits your business. No hidden fees. No surprises.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <div class="price-tier">Starter</div>
+          <div class="price-amount">₹15,000<span>/project</span></div>
+          <p class="price-desc">Perfect for startups and small businesses getting online for the first time.</p>
+          <ul class="price-features">
+            <li>✓ 3-page responsive website</li>
+            <li>✓ Basic UI/UX design</li>
+            <li>✓ Mobile-friendly layout</li>
+            <li>✓ Contact form</li>
+            <li>✓ 1 revision round</li>
+            <li>✓ 2-week delivery</li>
+            <li class="muted">✗ Custom animations</li>
+            <li class="muted">✗ SEO setup</li>
+          </ul>
+          <a href="contact.html" class="btn-outline full">Get Started</a>
+        </div>
+
+        <div class="price-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <div class="price-tier">Growth</div>
+          <div class="price-amount">₹35,000<span>/project</span></div>
+          <p class="price-desc">Ideal for growing businesses that need a powerful, polished online presence.</p>
+          <ul class="price-features">
+            <li>✓ Up to 7 pages</li>
+            <li>✓ Premium UI/UX design</li>
+            <li>✓ Custom animations</li>
+            <li>✓ SEO optimization</li>
+            <li>✓ Google Analytics setup</li>
+            <li>✓ 3 revision rounds</li>
+            <li>✓ 3-week delivery</li>
+            <li>✓ 1 month support</li>
+          </ul>
+          <a href="contact.html" class="btn-primary full">Get Started</a>
+        </div>
+
+        <div class="price-card">
+          <div class="price-tier">Elite</div>
+          <div class="price-amount">₹75,000<span>/project</span></div>
+          <p class="price-desc">For established brands demanding a world-class digital experience.</p>
+          <ul class="price-features">
+            <li>✓ Unlimited pages</li>
+            <li>✓ Custom brand identity</li>
+            <li>✓ Advanced animations</li>
+            <li>✓ E-commerce integration</li>
+            <li>✓ Full SEO package</li>
+            <li>✓ Unlimited revisions</li>
+            <li>✓ 4-5 week delivery</li>
+            <li>✓ 3 months support</li>
+          </ul>
+          <a href="contact.html" class="btn-outline full">Get Started</a>
+        </div>
+
+      </div>
+
+      <div class="pricing-note">
+        <p>All prices are starting estimates. Final quote provided after project discovery call. Custom packages available.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section dark-section">
+    <div class="container">
+      <p class="section-tag center">Questions</p>
+      <h2 class="center">Frequently <span class="gold">Asked</span></h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFAQ(this)">How long does a project take? <span>+</span></button>
+          <div class="faq-a">Depending on complexity, projects typically take 2–5 weeks from kickoff to launch. We'll give you a precise timeline after your discovery call.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFAQ(this)">Do you offer maintenance after launch? <span>+</span></button>
+          <div class="faq-a">Yes! Growth and Elite plans include post-launch support. We also offer standalone maintenance retainers for any project.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFAQ(this)">Can I upgrade my plan later? <span>+</span></button>
+          <div class="faq-a">Absolutely. We can always expand the scope of your project. Just let us know what you need and we'll provide a revised quote.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFAQ(this)">What do you need from me to get started? <span>+</span></button>
+          <div class="faq-a">We'll need your brand assets (logo if you have one), content, and a clear brief of your goals. We guide you through the rest!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Ready to <span class="gold">Get Started?</span></h2>
+      <p>Book a free 30-minute discovery call and let's build something great.</p>
+      <a href="contact.html" class="btn-primary">Book Free Call</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">TE<span>.</span></span>
+        <p>Tanish Enterprises</p>
+        <small>Premium Web Design Agency, India</small>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Tanish Enterprises. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tanish Enterprises | Premium Web Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">TE<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-text">DESIGN</div>
+    <div class="hero-content">
+      <p class="hero-tag">Premium Web Design Agency</p>
+      <h1>We Craft<br><span class="gold">Digital Experiences</span><br>That Convert.</h1>
+      <p class="hero-sub">Tanish Enterprises builds bold, beautiful websites that make brands unforgettable and businesses grow.</p>
+      <div class="hero-btns">
+        <a href="portfolio.html" class="btn-primary">View Our Work</a>
+        <a href="contact.html" class="btn-outline">Start a Project</a>
+      </div>
+    </div>
+    <div class="hero-scroll">↓ Scroll</div>
+    <div class="hero-stats">
+      <div class="stat"><span>120+</span><p>Projects Delivered</p></div>
+      <div class="stat"><span>98%</span><p>Client Satisfaction</p></div>
+      <div class="stat"><span>6+</span><p>Years of Excellence</p></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Web Design</span><span>★</span>
+      <span>UI/UX Design</span><span>★</span>
+      <span>Brand Identity</span><span>★</span>
+      <span>SEO Optimization</span><span>★</span>
+      <span>E-Commerce</span><span>★</span>
+      <span>Mobile Design</span><span>★</span>
+      <span>Web Design</span><span>★</span>
+      <span>UI/UX Design</span><span>★</span>
+      <span>Brand Identity</span><span>★</span>
+      <span>SEO Optimization</span><span>★</span>
+      <span>E-Commerce</span><span>★</span>
+      <span>Mobile Design</span><span>★</span>
+    </div>
+  </div>
+
+  <!-- ABOUT SNIPPET -->
+  <section class="home-about section">
+    <div class="container two-col">
+      <div class="col-text">
+        <p class="section-tag">Who We Are</p>
+        <h2>Tanish Enterprises — <span class="gold">Where Vision Meets Precision</span></h2>
+        <p>We are a full-service web design studio based in India, dedicated to building digital identities that stand out. Every pixel we craft tells your brand's story with clarity, beauty, and purpose.</p>
+        <a href="about.html" class="btn-primary">Learn More</a>
+      </div>
+      <div class="col-visual">
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="about-icon">✦</div>
+            <h3>Luxury Craftsmanship</h3>
+            <p>Every project receives meticulous attention to detail, from concept to launch.</p>
+          </div>
+        </div>
+        <div class="about-card offset">
+          <div class="about-card-inner">
+            <div class="about-icon">◈</div>
+            <h3>Strategic Design</h3>
+            <p>We combine aesthetics with conversion-focused thinking to drive real results.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SNIPPET -->
+  <section class="home-services section dark-section">
+    <div class="container">
+      <p class="section-tag center">What We Do</p>
+      <h2 class="center">Our <span class="gold">Core Services</span></h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="s-num">01</div>
+          <h3>Web Design & Development</h3>
+          <p>Stunning, responsive websites built for performance and impact.</p>
+          <a href="services.html">Explore →</a>
+        </div>
+        <div class="service-card">
+          <div class="s-num">02</div>
+          <h3>UI/UX Design</h3>
+          <p>Intuitive user experiences that delight and engage every visitor.</p>
+          <a href="services.html">Explore →</a>
+        </div>
+        <div class="service-card">
+          <div class="s-num">03</div>
+          <h3>Brand Identity</h3>
+          <p>Logo, color palette, typography — a complete visual language for your brand.</p>
+          <a href="services.html">Explore →</a>
+        </div>
+        <div class="service-card">
+          <div class="s-num">04</div>
+          <h3>E-Commerce Solutions</h3>
+          <p>Online stores that look premium and convert browsers into buyers.</p>
+          <a href="services.html">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SNIPPET -->
+  <section class="home-portfolio section">
+    <div class="container">
+      <p class="section-tag center">Our Work</p>
+      <h2 class="center">Featured <span class="gold">Projects</span></h2>
+      <div class="portfolio-grid">
+        <div class="port-card" style="--c:#c9a84c">
+          <div class="port-overlay">
+            <h3>LuxeStay Hotels</h3>
+            <p>Hospitality Website</p>
+            <a href="portfolio.html">View →</a>
+          </div>
+        </div>
+        <div class="port-card" style="--c:#8b5cf6">
+          <div class="port-overlay">
+            <h3>NovaTech SaaS</h3>
+            <p>SaaS Landing Page</p>
+            <a href="portfolio.html">View →</a>
+          </div>
+        </div>
+        <div class="port-card" style="--c:#e05252">
+          <div class="port-overlay">
+            <h3>Ember Eats</h3>
+            <p>Restaurant & Food Delivery</p>
+            <a href="portfolio.html">View →</a>
+          </div>
+        </div>
+      </div>
+      <div class="center" style="margin-top:2.5rem">
+        <a href="portfolio.html" class="btn-outline">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Ready to Build Something <span class="gold">Extraordinary?</span></h2>
+      <p>Let's bring your vision to life. Start your project today.</p>
+      <a href="contact.html" class="btn-primary">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">TE<span>.</span></span>
+        <p>Tanish Enterprises</p>
+        <small>Premium Web Design Agency, India</small>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Tanish Enterprises. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
